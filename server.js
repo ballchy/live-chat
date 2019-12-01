@@ -42,9 +42,6 @@ mongoose.connect(db, {
 
 app.use('/api/messages', require('./api/routes/message'));
 
-app.get('*', (req, res) => {
-    res.html('<h1>Hello World</h1>');
-});
 // Serve static assets if in production
 if (process.env.NODE_ENV === 'production') {
     // Set static folder
@@ -56,7 +53,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 io.on('connection', function (socket) {
-    console.log('a user connected');
+    console.log('a user conncected');
 });
 
 io.on('disconnect', function (socket) {
