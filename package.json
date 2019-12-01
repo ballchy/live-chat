@@ -4,7 +4,8 @@
   "description": "Live chat application using Socket.io",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "client": "cd client && npm run build",
+    "start": "npm run client && node server.js",
     "start-dev": "nodemon server.js"
   },
   "keywords": [],
