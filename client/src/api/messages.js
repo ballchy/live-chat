@@ -1,4 +1,4 @@
-const messageEndpoint = 'https://' + window.location.hostname + '/api/messages';
+const messageEndpoint = '/api/messages';
 
 export function sendMessage(input) {
     return (

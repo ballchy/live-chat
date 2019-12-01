@@ -20,6 +20,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "proxy": "https://ballchy.dev",
   "browserslist": {
     "production": [
       ">0.2%",
