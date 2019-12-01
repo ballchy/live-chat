@@ -8,7 +8,7 @@ import styled from 'styled-components'
 
 import io from 'socket.io-client';
 
-const ENDPOINT = 'http://ballchy.dev';
+const ENDPOINT = 'https://' + window.location.hostname;
 let socket;
 
 const Form = styled.div`

@@ -1,4 +1,4 @@
-const messageEndpoint = 'http://ballchy.dev/api/messages';
+const messageEndpoint = 'https://' + window.location.hostname + '/api/messages';
 
 export function sendMessage(input) {
     return (
